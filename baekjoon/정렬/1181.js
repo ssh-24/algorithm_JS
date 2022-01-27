@@ -1,5 +1,5 @@
 let fs = require('fs')
-let input = fs.readFileSync('예제.txt').toString().split('\n')
+let input = fs.readFileSync('dev/stdin').toString().split('\n')
 
 let input_num = Number(input[0])
 let count = 0
