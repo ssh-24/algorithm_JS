@@ -1,6 +1,7 @@
 let fs = require('fs');
-// let input = fs.readFileSync('dev/stdin').toString().split('').map(Number)
-let input = fs.readFileSync('예제.txt').toString().split('').map(Number)
+// let input = fs.readFileSync('dev/stdin').toString().trim().split('').map(Number)
+let input = fs.readFileSync('예제.txt').toString().trim().split('').map(Number)
+// 맞왜틀 8트 결과 => trim() 없어서 그런 것. 모니터 부술뻔ㅋㅋ
 
 const solution = (arr) => {
     let current = arr[0];
@@ -24,4 +25,3 @@ const solution = (arr) => {
 }
 
 console.log(solution(input));
-// 왜 틀렸을까?
